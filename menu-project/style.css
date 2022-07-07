@@ -1,0 +1,85 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(194, 190, 190);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+    padding: 0px 10px; 
+}
+
+.logo{
+    margin-left: 15px;
+    letter-spacing: -2px;
+    color: white;
+}
+
+.logo span:first-child{
+    color: blueviolet;
+}
+
+.logo span:last-child{
+    font-size: 15px;
+    letter-spacing: normal;
+}
+
+.menu{
+    display: flex;
+}
+.menu > li{
+    list-style: none;
+    position: relative;
+}
+
+.menu > li a{
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 27px;
+}
+
+.menu > li:hover{
+    background-color: blueviolet;
+}
+.menu > li:hover > .submenu,
+.submenu > li:hover > .submenu{
+    background-color: blueviolet;
+    display: block;
+    
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    list-style: none;
+    min-width: 110%;
+}
+
+.submenu li:hover{
+    background: rgb(83, 17, 145);
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li .submenu{
+    top: 0;
+    left: 100%;
+}
